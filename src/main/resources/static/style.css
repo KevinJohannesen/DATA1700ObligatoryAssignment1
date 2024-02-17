@@ -1,0 +1,4 @@
+/* Stildefinisjon for å gjøre inputfeltene like lange */
+.input-styling {
+    width: 200px; /* Du kan justere denne verdien etter behov */
+}

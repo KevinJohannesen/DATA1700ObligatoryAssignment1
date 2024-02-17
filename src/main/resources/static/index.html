@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Referer til den eksterne CSS-filen her -->
+
+  <title>Kjøp av Kinobilletter</title>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+
+Velg film: <select id="film" class="input-styling">
+  <option value="Film 1">Film 1</option>
+  <option value="Film 2">Film 2</option>
+  <option value="Film 3">Film 3</option>
+  <!-- Legg til flere filmer etter behov -->
+</select><br>
+<div class="input-styling">
+Antall: <input type="number" id="antall" min="1" max="20"><br>
+Fornavn: <input type="text" id="fornavn" pattern="[A-Za-z]+"><br>
+Etternavn: <input type="text" id="etternavn" pattern="[A-Za-z]+"><br>
+Telefonnr: <input type="tel" id="telefonnr" pattern="[0-9]{8}"><br>
+Email: <input type="email" id="email">
+</div>
+<br>
+
+<button onclick="kjopBillett()">Kjøp billett</button>
+<h2>Alle billetter</h2>
+<div id="billettListe"></div>
+<button onclick="slettAlleBilletter()">Slett alle billettene</button>
+
+<script src="app.js"></script>
+</body>
+</html>
