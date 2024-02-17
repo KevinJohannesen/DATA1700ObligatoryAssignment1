@@ -2,7 +2,8 @@
 .input-styling {
     display: grid;
     width: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.2rem;
 }
 
 .error-message {
@@ -23,7 +24,37 @@ button {
     border: none;
     padding: 10px;
 }
-
+.input-antall{
+    padding: 10px;
+}
+/* fant ut at jeg måtte editte inni hver eneste input så ja.*/
 #film {
+    border-color: #660094;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #d16aff;
+    border-radius: 5px;
+}
+#antall {
+    border-radius: 5px;
+    border-color: #660094;
+}
 
+#fornavn {
+    border-radius: 5px;
+    border-color: #660094;
+}
+
+#etternavn {
+    border-radius: 5px;
+    border-color: #660094;
+}
+
+#telefonnr {
+    border-radius: 5px;
+    border-color: #660094;
+}
+
+#email {
+    border-radius: 5px;
+    border-color: #660094;
 }

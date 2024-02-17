@@ -26,7 +26,8 @@ function kjopBillett() {
     const email = document.getElementById('email').value;
 
     // Input-validering
-  /*  if (!film || antall <= 0 || antall > 20 || !fornavn.match(/[A-Za-z]+/) || !etternavn.match(/[A-Za-z]+/) || telefonnr.length !== 8 || !email.includes('@')) {
+  /*  første short hand metoden min
+  if (!film || antall <= 0 || antall > 20 || !fornavn.match(/[A-Za-z]+/) || !etternavn.match(/[A-Za-z]+/) || telefonnr.length !== 8 || !email.includes('@')) {
         alert("Vennligst fyll ut alle feltene korrekt.");
         return;
     }

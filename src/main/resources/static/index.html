@@ -11,53 +11,48 @@
 <body>
 <h1>Bestilling av kinobilletter</h1>
 
-<label for="film">Velg film:</label>
+<label for="film">Velg film</label>
 <select id="film" >
   <option value=" Bukkene berusa">Bukkene berusa</option>
   <option value="Donald mc skrue">Donald mc skrue</option>
   <option value="Power Rangers">Power Rangers</option>
   <option value="Iron Man 1 (cosmin loves iron man)">Iron Man 1 </option> <!-- because cosmin background is of that -->
-  <!-- Legg til flere filmer etter behov -->
+  <!-- film listen under, kunne brukt forms men jeg ville edite den en del-->
 </select>
 <span class="error-message" id="error-film"></span><br>
+<br>
 
-<div class="input-styling">
-  <div>
-    <label for="antall">Antall:</label>
-    <span class="error-message" id="error-antall"></span><br>
-  </div>
-  <input type="number" id="antall" min="1" max="20">
-
-  <div>
-    <label for="fornavn">Fornavn:</label>
-    <span class="error-message" id="error-fornavn"></span><br>
-  </div>
-  <input type="text" id="fornavn" pattern="[A-Za-z]+">
-
-  <div>
-    <label for="etternavn">Etternavn:</label>
-    <span class="error-message" id="error-etternavn"></span><br>
-  </div>
-  <input type="text" id="etternavn" pattern="[A-Za-z]+">
-
-  <div>
-    <label for="telefonnr">Telefonnr:</label>
-    <span class="error-message" id="error-telefonnr"></span><br>
-  </div>
-  <input type="tel" id="telefonnr" pattern="[0-9]{8}">
-
-  <div>
-    <label for="email">Email:</label>
-    <span class="error-message" id="error-email"></span><br>
-  </div>
-  <input type="email" id="email">
+<div class="input-antall">
+<label for="antall">Antall</label>
+<input type="number" id="antall" min="1" max="20">
+<span class="error-message" id="error-antall"></span>
 </div>
 
-<br>
+<!-- inputsa her  -->
+<div class="input-styling">
+  <label for="fornavn">Fornavn</label>
+  <input type="text" id="fornavn" pattern="[A-Za-z]+">
+  <div><span class="error-message" id="error-fornavn"></span></div> <!--hadde br istedenfor div først men det ødela -->
+
+  <label for="etternavn">Etternavn</label>
+  <input type="text" id="etternavn" pattern="[A-Za-z]+">
+  <div><span class="error-message" id="error-etternavn"></span></div>
+
+  <label for="telefonnr">Telefonnr</label>
+  <input type="tel" id="telefonnr" pattern="[0-9]{8}">
+  <div><span class="error-message" id="error-telefonnr"></span></div>
+
+  <label for="email">Email</label>
+  <input type="email" id="email">
+  <div><span class="error-message" id="error-email"></span></div>
+</div>
+
+<!--Her klikker du knappen og kjører funksjonen i JS -->
 
 <button onclick="kjopBillett()">Kjøp billett</button>
 <h2>Alle billetter</h2>
 <div id="billettListe"></div>
+<!--Her klikker du knappen og kjører funksjonen i JS som sletter arrayet -->
 <button onclick="slettAlleBilletter()">Slett alle billettene</button>
 
 <script src="app.js"></script>
