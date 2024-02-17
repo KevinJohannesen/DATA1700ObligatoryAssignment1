@@ -4,25 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css"> <!-- Referer til den eksterne CSS-filen her -->
-
   <title>Kjøp av Kinobilletter</title>
 </head>
+
+
 <body>
 <h1>Bestilling av kinobilletter</h1>
 
-Velg film: <select id="film" class="input-styling">
-  <option value="Film 1">Film 1</option>
-  <option value="Film 2">Film 2</option>
-  <option value="Film 3">Film 3</option>
+<label for="film">Velg film:</label>
+<select id="film" >
+  <option value=" Bukkene berusa">Bukkene berusa</option>
+  <option value="Donald mc skrue">Donald mc skrue</option>
+  <option value="Power Rangers">Power Rangers</option>
+  <option value="Iron Man 1 (cosmin loves iron man)">Iron Man 1 </option> <!-- because cosmin background is of that -->
   <!-- Legg til flere filmer etter behov -->
-</select><br>
+</select>
+<span class="error-message" id="error-film"></span><br>
+
 <div class="input-styling">
-Antall: <input type="number" id="antall" min="1" max="20"><br>
-Fornavn: <input type="text" id="fornavn" pattern="[A-Za-z]+"><br>
-Etternavn: <input type="text" id="etternavn" pattern="[A-Za-z]+"><br>
-Telefonnr: <input type="tel" id="telefonnr" pattern="[0-9]{8}"><br>
-Email: <input type="email" id="email">
+  <label for="antall">Antall:</label>
+  <input type="number" id="antall" min="1" max="20">
+  <span class="error-message" id="error-antall"></span><br>
+
+  <label for="fornavn">Fornavn:</label>
+  <input type="text" id="fornavn" pattern="[A-Za-z]+">
+  <span class="error-message" id="error-fornavn"></span><br>
+
+  <label for="etternavn">Etternavn:</label>
+  <input type="text" id="etternavn" pattern="[A-Za-z]+">
+  <span class="error-message" id="error-etternavn"></span><br>
+
+  <label for="telefonnr">Telefonnr:</label>
+  <input type="tel" id="telefonnr" pattern="[0-9]{8}">
+  <span class="error-message" id="error-telefonnr"></span><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email">
+  <span class="error-message" id="error-email"></span><br>
 </div>
+
 <br>
 
 <button onclick="kjopBillett()">Kjøp billett</button>
